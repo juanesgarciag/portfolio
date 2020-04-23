@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Juanes</title>
+    <link rel="icon" type="image/io" href="./Imagenes/favicon.ico">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <figure>
+                <img src="./Imagenes/Logo.png" alt="Logo de la empresa de Juanes">
+            </figure>
+            <nav>
+                <ul>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h1>
+            <strong>Conoce</strong> un poco de mi.<br> Soy <strong>Juanes</strong> y soy un apasionado<br> por la <strong>tecnologia</strong>
+        </h1>
+        <img src="./Imagenes/juanes.jpg" width="300px" alt="Imagen principal" >
+    </section>
+    <section id="portfolio">
+        <h2>Portafolio (Proyectos destacados)</h2>
+        <article>
+            <h3>Platzi Video</h3>
+            <h6>React Native / React</h6>
+            <p><small><strong>Fecha</strong> 23/04/2020</small></p>
+            <p><small><strong>Puedes verlo en:</strong> <a href="https://juanesgarciag.github.io/platzivideo">https://juanesgarciag.github.io/platzivideo</a></small></p>
+            <img src="./Imagenes/undraw_add_tasks_mxew.png" alt="Celphone">
+        </article>
+    </section>
+    <section id="experiencia">
+        <h2>Esta es mi experiencia</h2>
+        <article>
+            <figure>
+                <img src="./Imagenes/grados.jpg" width="500" alt="Grados">
+            </figure>
+            <h3>Ingenieria de Software</h3>
+            <p>El desarrollo de mi carrera profesional, el resultado de mas de 5 años de estudio. Con altas y bajas, conociendo todo tipo de personas, profesores buenos, regurales y malos
+                pero todo dentro del proceso que hace que sea lo que he llegado a ser en estos años.
+            </p>
+            <a href="https://www.youtube.com/watch?v=YC2GmWjJBho" target="_blank">Y lo logramos</a>
+        </article>
+    </section>
+    <section id="contact">
+        <form action="/suscripcion/">
+            <h3>¡Cuentanos tus proyectos!</h3>
+            <input type="text" placeholder="Ponte en contacto">
+            <button>Enviar</button>
+        </form>
+    </section>
+    <footer>Footer</footer>
 </body>
 </html>

@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Juanes</title>
     <link rel="icon" type="image/io" href="./Imagenes/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <div>
-            <figure>
-                <img src="./Imagenes/Logo.png" alt="Logo de la empresa de Juanes">
+    <header class="header">
+        <div class="wrapper">
+            <figure class="logo">
+                <img class="logo-img" src="./Imagenes/Logo.png" alt="Logo de la empresa de Juanes">
             </figure>
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li><a class="link" href="#portfolio">Portafolio</a></li>
                     <li><a class="link" href="#experiencia">Experiencia</a></li>
@@ -22,42 +23,130 @@
             </nav>
         </div>
     </header>
-    <section>
-        <h1>
-            <strong>Conoce</strong> un poco de mi.<br> Soy <strong>Juanes</strong> y soy un apasionado<br> por la <strong>tecnologia</strong>
-        </h1>
-        <img src="./Imagenes/juanes.jpg" width="300px" alt="Imagen principal" >
+    <section class="hero">
+        <div class="wrapper">
+            <h1>
+                <strong>Conoce</strong> un poco de mi.<br> Soy <strong>Juanes</strong> y soy un apasionado<br> por la <strong>tecnologia</strong>
+            </h1>
+            <img class="hero__image" src="./Imagenes/family.jpg" width="500px" height="300px" alt="Imagen principal" >
+        </div>
     </section>
-    <section id="portfolio">
-        <h2>Portafolio (Proyectos destacados)</h2>
-        <article>
-            <h3>Platzi Video</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha</strong> 23/04/2020</small></p>
-            <p><small><strong>Puedes verlo en:</strong> <a href="https://juanesgarciag.github.io/platzivideo">https://juanesgarciag.github.io/platzivideo</a></small></p>
-            <img src="./Imagenes/undraw_add_tasks_mxew.png" alt="Celphone">
-        </article>
+    <section id="portfolio" class="portfolio">
+        <div class="wrapper">
+            <h2>Portafolio (Proyectos destacados)</h2>
+            <article class="project">
+                <div class="project__container">
+                    <h3 class="project__container-tittle">Platzi Video</h3>
+                    <h6 class="project__container-course">React Native / React</h6>
+                    <p class="project__container-date"><small><strong>Fecha</strong> 23/04/2020</small></p>
+                    <p class="project__container-url"><small><strong>Puedes verlo en:</strong> <a href="https://juanesgarciag.github.io/platzivideo">https://juanesgarciag.github.io/platzivideo</a></small></p>
+                    <p class="project__container-description">
+                        Este fue el resultado del curso de desarrollo full stack javascript, aun no le he terminado
+                        pero tengo una proyección de terminar el curso en aproximadamente 2 meses apartir
+                        del día de hoy (23/abr/2020), en este momento
+                    </p>
+                </div>
+                <figure class="project__imageContainer">
+                    <img class="project__imageContainer-img" src="./Imagenes/undraw_newsletter_vovu.png" alt="Celphone">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project__container">
+                    <h3 class="project__container-tittle">Platzi Video</h3>
+                    <h6 class="project__container-course">React Native / React</h6>
+                    <p class="project__container-date"><small><strong>Fecha</strong> 23/04/2020</small></p>
+                    <p class="project__container-url"><small><strong>Puedes verlo en:</strong> <a href="https://juanesgarciag.github.io/platzivideo">https://juanesgarciag.github.io/platzivideo</a></small></p>
+                    <p class="project__container-description">
+                        Este fue el resultado del curso de desarrollo full stack javascript, aun no le he terminado
+                        pero tengo una proyección de terminar el curso en aproximadamente 2 meses apartir
+                        del día de hoy (23/abr/2020), en este momento
+                    </p>
+                </div>
+                <figure class="project__imageContainer">
+                    <img class="project__imageContainer-img" src="./Imagenes/undraw_newsletter_vovu.png" alt="Celphone">
+                </figure>
+            </article>
+        </div>
     </section>
-    <section id="experiencia">
-        <h2>Esta es mi experiencia</h2>
-        <article>
-            <figure>
-                <img src="./Imagenes/grados.jpg" width="500" alt="Grados">
-            </figure>
-            <h3>Ingenieria de Software</h3>
-            <p>El desarrollo de mi carrera profesional, el resultado de mas de 5 años de estudio. Con altas y bajas, conociendo todo tipo de personas, profesores buenos, regurales y malos
-                pero todo dentro del proceso que hace que sea lo que he llegado a ser en estos años.
-            </p>
-            <a href="https://www.youtube.com/watch?v=YC2GmWjJBho" target="_blank">Y lo logramos</a>
-        </article>
+    <div class="wrapper">
+        <h2 class="experiencia_title">Esta es mi experiencia</h2>
+        <section id="experiencia" class="experiencia">
+            <article class="events">
+                <figure class="events__imageContainer">
+                    <img class="events__imageContainer-img" src="./Imagenes/grados.jpg" width="500" alt="Grados">
+                </figure>
+                <div class="events__details">
+                    <h3 class="events__details-title">Ingenieria de Software</h3>
+                    <p class="events__details-description">El desarrollo de mi carrera profesional, el resultado de mas de 5 años de estudio. Con altas y bajas, conociendo todo tipo de personas, profesores buenos, regurales y malos
+                        pero todo dentro del proceso que hace que sea lo que he llegado a ser en estos años.
+                    </p>
+                    <a class="events__details-url" href="https://www.youtube.com/watch?v=YC2GmWjJBho" target="_blank">Y lo logramos</a>
+                </div>
+            </article>
+            <article class="events">
+                <figure class="events__imageContainer">
+                    <img class="events__imageContainer-img" src="./Imagenes/grados.jpg" width="500" alt="Grados">
+                </figure>
+                <div class="events__details">
+                    <h3 class="events__details-title">Ingenieria de Software</h3>
+                    <p class="events__details-description">El desarrollo de mi carrera profesional, el resultado de mas de 5 años de estudio. Con altas y bajas, conociendo todo tipo de personas, profesores buenos, regurales y malos
+                        pero todo dentro del proceso que hace que sea lo que he llegado a ser en estos años.
+                    </p>
+                    <a class="events__details-url" href="https://www.youtube.com/watch?v=YC2GmWjJBho" target="_blank">Y lo logramos</a>
+                </div>
+            </article>
+            <article class="events">
+                <figure class="events__imageContainer">
+                    <img class="events__imageContainer-img" src="./Imagenes/grados.jpg" width="500" alt="Grados">
+                </figure>
+                <div class="events__details">
+                    <h3 class="events__details-title">Ingenieria de Software</h3>
+                    <p class="events__details-description">El desarrollo de mi carrera profesional, el resultado de mas de 5 años de estudio. Con altas y bajas, conociendo todo tipo de personas, profesores buenos, regurales y malos
+                        pero todo dentro del proceso que hace que sea lo que he llegado a ser en estos años.
+                    </p>
+                    <a class="events__details-url" href="https://www.youtube.com/watch?v=YC2GmWjJBho" target="_blank">Y lo logramos</a>
+                </div>
+            </article>
+            <article class="events">
+                <figure class="events__imageContainer">
+                    <img class="events__imageContainer-img" src="./Imagenes/grados.jpg" width="500" alt="Grados">
+                </figure>
+                <div class="events__details">
+                    <h3 class="events__details-title">Ingenieria de Software</h3>
+                    <p class="events__details-description">El desarrollo de mi carrera profesional, el resultado de mas de 5 años de estudio. Con altas y bajas, conociendo todo tipo de personas, profesores buenos, regurales y malos
+                        pero todo dentro del proceso que hace que sea lo que he llegado a ser en estos años.
+                    </p>
+                    <a class="events__details-url" href="https://www.youtube.com/watch?v=YC2GmWjJBho" target="_blank">Y lo logramos</a>
+                </div>
+            </article>
+        </section>
+    </div>
+    <section id="contact" class="contact">
+        <div class="wrapper">
+            <form action="/suscripcion/" class="contact__form-email">
+                <h3>¡Cuentanos tus proyectos!</h3>
+                <input type="text" placeholder="Ponte en contacto">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com" class="social_link twitter"></a>
+                <a href="https://facebook.com" class="social_link facebook"></a>
+                <a href="htps://github.com" class="social_link github"></a>
+                <a href="https://instagram.com" class="social_link instagram"></a>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-        <form action="/suscripcion/">
-            <h3>¡Cuentanos tus proyectos!</h3>
-            <input type="text" placeholder="Ponte en contacto">
-            <button>Enviar</button>
-        </form>
-    </section>
-    <footer>Footer</footer>
+    <footer class="footer">
+        <div class="wrapper">
+            <div>
+                <p>Desarrollado por E-Support Ingenieria S.A.S 2020 <img src="./Imagenes/Logo horizontal blanco png.png" alt="logo footer" width="100px"></p>
+            </div>
+            <div>
+                <p>
+                    Diseño tomado del curso de platzi desarrollo web <a href="https://platzi.com/clases/html5-css3/?notification_id=229286">Platzi</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

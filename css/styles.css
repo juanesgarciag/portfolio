@@ -290,10 +290,28 @@ ul{
 
 .wrapper{
   /*border: 1px solid lightgreen; */
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
+}
+
+/* Desktop First se empieza desde el MQ mas grande*/
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 480){
+
+}
+
+@media screen and (max-width: 320){
+
 }

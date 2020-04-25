@@ -42,13 +42,18 @@ ul{
     list-style: none;
 }
 
+img{
+    max-width: 100%;
+}
+
 .header{
     background-color: #2f2e41;
     color: white;
     display: flex;
-    justify-content: space-between;
     height: 70px;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header a{
@@ -70,6 +75,7 @@ ul{
 }
 
 .menu{
+    display: flex;
     height: inherit;
 }
 
@@ -83,10 +89,10 @@ ul{
 
 .logo-img{
     width: 150px;
+    display: inherit;
 }
 
 .hero{
-    height: 300px;
     /* background-image: url('../Imagenes/family.jpg'); */
     background-color: #2F2E41;
     /* background-size: 500px 300px;
@@ -95,6 +101,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero__image{
@@ -104,6 +111,7 @@ ul{
 .portfolio{
     background: rgb(238, 236, 236);
     padding: 20px;
+    display: flex;
 }
 
 .project{
@@ -115,6 +123,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project strong{
@@ -122,7 +131,7 @@ ul{
 }
 
 .project__container{
-    width: 500px;
+    width: 45%;
 }
 
 .project__container-tittle{
@@ -140,17 +149,19 @@ ul{
 /* .project__container-date{
     margin: 10px 0;
 }
-
-.project__container-url{
-    margin: 10px 0;
-} */
+*/
+.project__container-url a{
+    text-decoration: none;
+    color: #000;
+}
 
 .project__container-description{
     font-size: 20px;
 }
 
 .project__imageContainer{
-    width: 500px;
+    width: 45%;
+    margin: 0;
 }
 
 .experiencia_title{
@@ -164,9 +175,10 @@ ul{
 }
 
 .events{
-    margin: 10px;
+    margin: 1%;
+    margin-bottom: 20px;
     padding: 0;
-    width: 480px;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     background: #CED4B2;
@@ -195,6 +207,7 @@ ul{
 
 .events__details-description{
     text-align: left;
+    margin-bottom: 30px;
 }
 
 .events__details-url{
@@ -214,6 +227,7 @@ ul{
     align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .contact__form-email h3{
@@ -252,7 +266,7 @@ ul{
     height: 50px;
     display: inline-block;
     background-size: 50px 50px;
-    margin: 0 15px;
+    margin: 0 6px;
 }
 
 .social_link.twitter{
@@ -277,6 +291,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img{
@@ -290,28 +305,171 @@ ul{
 
 .wrapper{
   /*border: 1px solid lightgreen; */
-    width: 1100px;
+    max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
+    flex-wrap: wrap;
 }
 
 /* Desktop First se empieza desde el MQ mas grande*/
 
 @media screen and (max-width: 1024px){
+    h1{
+        font-size: 2em;
+        z-index: 2;
+    }
 
+    .wrapper{
+        padding: 0 1em;
+    }
+
+    .hero{
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+
+    .hero__image{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header ul li{
+        height: 50px;
+        display: flex;
+        flex: auto;
+        justify-content: center;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+    .project{
+        display: block;
+    }
+
+    .project__container{
+        width: auto;
+        font-size: 14px;
+    }
+
+    .project__imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .project__container-course, .project__container-date, .project__container-url{
+        margin: 0.4em 0;
+    }
+    .project__container-tittle{
+        font-size: 1.5em;
+        margin-bottom: 0.3em;
+    }
+
+    .project__container-course{
+        font-size: .8em;
+    }
+
+    .project__container-date{
+        font-size: 1em;
+    }
+
+    .project__container-url{
+        font-size: 1em;
+    }
+
+    .project__container-description{
+        font-size: 1em;
+    }
+
+    .events{
+        width: auto;
+    }
+
+    .events__imageContainer-img{
+        width: 100%;
+    }
+
+    .events__details{
+        margin: -2em .5em .5em .5em;
+    }
+
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .contact__form-email button {
+        margin: 1.5em auto;
+    }
+
+    .contact__form-email h3{
+        margin-top: 0;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+        border:1px solid transparent ;
+        font-size: .8em;
+    }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 1.5em;
+    }
 
+    .hero__title{
+        font-size: 2em;
+    }
+
+    .project__container{
+        width: auto;
+        font-size: 10px;
+    }
+
+    .footer{
+        font-size: .8em;
+    }
 }
 
-@media screen and (max-width: 480){
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 1.2em;
+        background: rgba(0,0,0,0.5)
+    }
 
-}
-
-@media screen and (max-width: 320){
+    .hero{
+        padding: 2em 1em;
+    }
 
 }

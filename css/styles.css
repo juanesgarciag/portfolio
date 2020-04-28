@@ -333,7 +333,7 @@ img{
     width: 50px;
     height: 50px;
     display: inline-block;
-    background-size: 50px 50px;
+    background-size: 50px;
     margin: 0 6px;
 }
 
@@ -385,7 +385,7 @@ img{
 
 /* Desktop First se empieza desde el MQ mas grande*/
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
     h1{
         font-size: 2em;
         z-index: 2;
@@ -413,6 +413,15 @@ img{
     }
 
 @media screen and (max-width: 767px){
+    h2{
+        margin: .5em 0;
+        font-size: 1.2em;
+    }
+
+    .portfolio{
+        padding: 0;
+    }
+
     .burger-button{
         display: block;
     }
@@ -456,8 +465,7 @@ img{
         left: -100vw;
         bottom: 0;
         width: 100vw;
-        transition: .3s
-         ;
+        transition: .3s;
     }
 
     .menu.is-active{
@@ -487,7 +495,7 @@ img{
     }
 
     .project__container-course{
-        font-size: .8em;
+        font-size: 1em;
     }
 
     .project__container-date{
@@ -500,6 +508,11 @@ img{
 
     .project__container-description{
         font-size: 1em;
+    }
+
+    .experiencia_title{
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .events{
@@ -548,7 +561,7 @@ img{
 
     .project__container{
         width: auto;
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .footer{

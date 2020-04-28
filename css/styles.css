@@ -94,6 +94,22 @@ img{
     max-width: 100%;
 }
 
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.8);
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+    display: none;
+}
+
 .header{
     background-color: #2f2e41;
     color: white;
@@ -125,6 +141,14 @@ img{
 .menu{
     display: flex;
     height: inherit;
+    transition: font-weight 200ms linear 0s;
+    transition: font-size 400ms linear 0s;
+}
+
+.menu ul :hover{
+    color: #98A44A;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 
@@ -389,6 +413,10 @@ img{
     }
 
 @media screen and (max-width: 767px){
+    .burger-button{
+        display: block;
+    }
+
     .header{
         display: block;
         height: auto;
@@ -406,12 +434,34 @@ img{
         justify-content: center;
     }
 
+    .header a{
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+
     .logo{
         justify-content: center;
     }
 
     .menu{
+        display: flex;
+        position: fixed;
+        align-items: center;
         justify-content: center;
+        background: rgba(190, 211, 75, 0.9);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        bottom: 0;
+        width: 100vw;
+        transition: .3s
+         ;
+    }
+
+    .menu.is-active{
+        left: 0;
     }
 
     .project{
